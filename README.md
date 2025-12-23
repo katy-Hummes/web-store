@@ -1,1 +1,35 @@
 # web-store
+### How to use:
+  
+- A versão do PHP utilizada no Projeto é PHP 8.2.11
+- clique no botão verde acima (<> código) e copie o link: https://github.com/KatyHummes/Protocols.git
+- configure o banco de dados com .env
+- Copie o arquivo **.env.example** para **.env** e configure as variáveis de ambiente relacionadas ao banco de dados
+- execute os comandos:
+```
+composer install
+```
+```
+npm install
+```
+- então execute o comando
+```
+php artisan key:generate
+```
+- abra o servidor:
+```
+php artisan serve
+```
+- deixe o npm em execução:
+```
+npm run dev
+```
+- execute as migrações: (seeds are optional)
+```
+php artisan migrate --seed
+```
+and finally run this command:
+```
+php artisan storage:link
+```
+- access the URL: http://127.0.0.1:8000/
